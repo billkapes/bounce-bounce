@@ -6,6 +6,7 @@ TagManager:
   tags:
   - PaddleTop
   - PaddleBottom
+  - Coin
   layers:
   - Default
   - TransparentFX
