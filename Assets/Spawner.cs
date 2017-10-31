@@ -5,15 +5,15 @@ using UnityEngine;
 public class Spawner : MonoBehaviour {
 	public GameObject[] obs;
 	public GameObject coin, coinMove;
-	public float yMax, randomAmount, xSepMin, xSepMax;
+	public float yMax, randomAmount, xSepMin, xSepMax, speed;
 	public Transform spawnPoint;
 
 	float counter = 1f, coinCounter = 3f;
-
+	public float maxSpeed;
 
 	// Use this for initialization
 	void Start () {
-		
+		maxSpeed = speed;
 	}
 	
 	// Update is called once per frame
@@ -47,7 +47,7 @@ public class Spawner : MonoBehaviour {
 		float Ypos = Random.Range(-yMax, yMax);
 		float Xsep = Random.Range(xSepMin, xSepMax);
 		float xSign = 1f;
-		float xSpeed = Random.Range(1.5f, 3f);
+		float xSpeed = Random.Range(1.5f, maxSpeed);
 		if (Random.Range(0, 2) == 0) {
 			xSign = -1f;
 		}
@@ -67,5 +67,7 @@ public class Spawner : MonoBehaviour {
 		if (randomAmount <= 1f) {
 			randomAmount = 1f;
 		}
+
+		maxSpeed += 0.1f;
 	}
 }

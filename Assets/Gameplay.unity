@@ -194,7 +194,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01b5f0fdd79788d4889bf61bb9589bd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
+  speed: 6
+  thetimescale: 0
 --- !u!58 &671012896
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -248,7 +249,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &770604686
 Rigidbody2D:
   serializedVersion: 4
@@ -372,7 +373,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.32, y: 0.36}
+  m_Size: {x: 0.32, y: 1.17}
   m_EdgeRadius: 0
 --- !u!1 &1123691486
 GameObject:
@@ -498,7 +499,9 @@ MonoBehaviour:
   randomAmount: 5
   xSepMin: 1.5
   xSepMax: 2.5
+  speed: 3
   spawnPoint: {fileID: 1782310331}
+  maxSpeed: 0
 --- !u!4 &1423259552
 Transform:
   m_ObjectHideFlags: 0
@@ -531,7 +534,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &1630603920
 Rigidbody2D:
   serializedVersion: 4
@@ -655,7 +658,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.32, y: 0.36}
+  m_Size: {x: 0.33, y: 1.17}
   m_EdgeRadius: 0
 --- !u!1 &1782310330
 GameObject:
@@ -700,7 +703,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!96 &1798950348
 TrailRenderer:
   serializedVersion: 2
